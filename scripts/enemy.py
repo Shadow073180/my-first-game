@@ -1,3 +1,4 @@
+from scripts.counter import Counter
 import random
 import time
 
@@ -12,6 +13,7 @@ class Enemy():
         self.type = type
         self.attack_damage = attack_damage
         self.attack_time = attack_time
+       
 
     def attack(self, player):
         damage = random.randrange(0,self.attack_damage)
@@ -21,7 +23,10 @@ class Enemy():
             player.hp = 0
             return
         print(f"{player.name} has {player.hp} hp left.")
-        time.sleep(self.attack_time)
+        
+            
+            
+
 
 
     

@@ -1,4 +1,5 @@
 from scripts.weapon import Weapon
+from scripts.counter import Counter
 import random
 import time
 
@@ -19,7 +20,9 @@ class Player():
             enemy.hp = 0
             return
         print(f"{enemy.name} has {enemy.hp} hp left.")
-        time.sleep(weapon.attack_time)
+        
+            
+            
         
 
 

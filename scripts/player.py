@@ -13,27 +13,27 @@ class Player():
         
 
     def attack(self, weapon, enemy):
-        damage = random.randrange(0,weapon.attack)
+        if self.hp <= .10 * self.hp:
+            damage = random.randrange(10,weapon.attack)
+            print("Ultra ATTACK!!")
+        else:
+            damage = random.randrange(0,weapon.attack)
         print(f"{self.name} hit {enemy.name} for {damage} hp.")
         enemy.hp -= damage
-        wait = True
-        while wait == True:
-            for i in range(weapon.attack_time):
-                print(self.name + " has " + str(weapon.attack_time-i) + " seconds remaining \n")
-                t.sleep(1)
-                if i == 0:
-                    wait = False
-                else:
-                    enemy.attack(self)
-        if enemy.hp < 0:
-            enemy.hp = 0
-            return
-        print(f"{enemy.name} has {enemy.hp} hp left.")
-        
+        if weapon.attack_time > 1:
+            wait = True
+            while wait == True:
+                for i in range(weapon.attack_time):
+                    print(self.name + " has " + str(weapon.attack_time-i) + " seconds   remaining \n")
+                    t.sleep(1)
+                    if i == 0:
+                        wait = False
+                    else:
+                        enemy.attack(self)
+        print(f"{enemy.name} has {enemy.hp} hp left.")    
             
-            
-        
-
+    def check_if_dead(self):
+        return self.hp
 
     
     

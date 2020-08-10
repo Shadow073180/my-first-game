@@ -13,28 +13,17 @@ david_spellbook = Spellbook(10)
 inferno = Spell(50, 1.5, "Inferno", 1, 10)
 
 
-
-
-def run_game(enemy, player, weapon):
-    dead = False
-    while dead == False:
-        enemy.attack(player)
-        enemy_current_hp = enemy.check_if_dead()
-        if enemy_current_hp <= 0:
-            dead == True
-            print(f"{player.name} has killed {enemy.name}. Great Job.....GAME OVER!!")
-            return
-        
-    
+run = True
+while run == True:
+    if player.hp <= 0:
+        run = False
+    else:
         player.attack(weapon, enemy)
-        player_current_hp = player.check_if_dead()
-        if player_current_hp <= 0:
-            dead = True
-            print(f"{enemy.name} has killed {player.name}. Better luck next time.....GAME OVER!!")
-            return
+    if enemy.hp <= 0:
+        run = False
+    else:
+        enemy.attack(player)
 
-
-run_game(enemy, player, weapon)
 
 
 

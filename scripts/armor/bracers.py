@@ -1,0 +1,2 @@
+class Bracers(Armor):
+    pass

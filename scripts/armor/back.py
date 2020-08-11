@@ -1,0 +1,2 @@
+class Back(Armor):
+    pass

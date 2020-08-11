@@ -1,0 +1,2 @@
+class Shoulders(Armor):
+    pass

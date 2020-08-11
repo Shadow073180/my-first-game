@@ -1,0 +1,2 @@
+class Head(Armor):
+    pass

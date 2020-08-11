@@ -1,0 +1,2 @@
+class Legs(Armor):
+    pass

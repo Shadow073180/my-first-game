@@ -1,0 +1,2 @@
+class Chest(Armor):
+    pass

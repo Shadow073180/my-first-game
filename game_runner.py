@@ -17,10 +17,12 @@ run = True
 while run == True:
     if player.hp <= 0:
         run = False
+        print(f"{player.name} has been killed by {enemy.name}. Game Over!!")
     else:
         player.attack(weapon, enemy)
     if enemy.hp <= 0:
         run = False
+        print(f"{player.name} has killed {enemy.name} Awesome job! Game Over!!")
     else:
         enemy.attack(player)
 

@@ -8,6 +8,12 @@ import time as t
 class Player(Person):
     def __init__(self):
         super()__init__()
+
+    def equip_weapon(self, weapon):
+
+    def equip_armor(self, Item):
+
+    def attack_enemy(self, enemy):
      
 
     

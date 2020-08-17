@@ -7,9 +7,7 @@ class Spellbook():
         self.slots_available = slots_available
         self.spells = []
 
-    def add_spell_to_spellbook(self, spell):
-        self.slots_available -= 1
-        spell = spell.name
-        self.spells.append(spell.name)
-
+    def add_spell(self, spell):
+        self.spells.append(spell)
+        print(self.spells)
         

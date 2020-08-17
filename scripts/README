@@ -1,0 +1,86 @@
+Models:
+
+Person():
+  
+  def __init__(self, name, level, attributes, enhancements, class): 
+    attributes = [stamina, armor, intellect]
+    self.attributes = attributes
+    enhancements = [critical_strike, haste, versatility]
+    self.enhancements = enhancements
+    class = [Druid, Warrior, Mage, Warlock, Hunter, Healer]
+    
+
+    def move_forward(self):
+
+    def move_back(self):
+
+    def move_left(self):
+
+    def move_right(self):
+
+    def defend(self):
+    
+
+  Player(Person):
+    def __init__(self):
+      super()__init__()
+
+    def equip_weapon(self, weapon):
+
+    def equip_armor(self, Item):
+
+    def attack_enemy(self, enemy):
+
+
+  Enemy(Person):
+    def __init__(self):
+      super()__init__()
+
+    def attack_player(self, player)
+
+  
+
+Item():
+
+  def __init__(self,haste, stamina, armor, intellect, critical_strike, haste, versatility, item_level):
+
+  Armor(Item):
+    def __init__(self,head, neck, shoulder, back, chest, wrist, hands, waist, legs, feet):
+      super()__init__()
+
+    Ring(Armor):
+      def __init__(self):
+        super()__init__()
+      
+      Ring1(Ring):
+        def __init__(self):
+          super()__init__() 
+      
+      Ring2(Ring):
+        def __init__(self):
+          super()__init__()
+
+
+    Weapon(Item):
+      def __init__(self):
+        super()__init__()
+      
+      main_hand(Weapon):
+        def __init__(self):
+          super()__init__() 
+      
+      off_hand(Weapon):
+        def __init__(self):
+          super()__init__()
+
+Spellbook():
+
+  def __init__(self, slots, spells):
+
+    def add_spell(self, spell):
+
+Spell():
+  
+  def __init__(self, name, intellect_cost, cast_time, additional_attributes):
+
+  

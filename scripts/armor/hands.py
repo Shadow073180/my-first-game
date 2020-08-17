@@ -1,2 +1,0 @@
-class Hands(Armor):
-    pass

@@ -1,4 +1,4 @@
-from scripts.spell import Spell
+from .spell import Spell
 
 
 class Spellbook():

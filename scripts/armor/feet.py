@@ -1,2 +1,0 @@
-class Feet(Armor):
-    pass

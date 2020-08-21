@@ -11,7 +11,7 @@ class Player(Person):
 
     def equip_weapon(self, weapon):
 
-    def equip_armor(self, Item):
+    def equip_armor(self, item):
 
     def attack_enemy(self, enemy):
      
